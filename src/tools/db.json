@@ -2,10 +2,10 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth0 by Pedro Arronte",
+      "title": "Securing React Apps with Auth0",
       "slug": "react-auth0-authentication-security",
       "authorId": 1,
-      "category": "JavaScript"
+      "category": ""
     },
     {
       "id": 2,
@@ -69,46 +69,6 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
-    },
-    {
-      "id": 11,
-      "title": "a",
-      "authorId": 1,
-      "category": "b",
-      "createdAt": 1573359929405,
-      "slug": "a"
-    },
-    {
-      "id": 12,
-      "title": "a",
-      "authorId": 1,
-      "category": "b",
-      "createdAt": 1573359931873,
-      "slug": "a"
-    },
-    {
-      "id": 13,
-      "title": "a",
-      "authorId": 1,
-      "category": "b",
-      "createdAt": 1573359932951,
-      "slug": "a"
-    },
-    {
-      "id": 14,
-      "title": "a",
-      "authorId": 1,
-      "category": "c",
-      "createdAt": 1573408728037,
-      "slug": "a"
-    },
-    {
-      "id": 15,
-      "title": "v",
-      "authorId": 1,
-      "category": "b",
-      "createdAt": 1573409173059,
-      "slug": "v"
     }
   ],
   "authors": [
