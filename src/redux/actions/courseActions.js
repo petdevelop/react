@@ -14,6 +14,10 @@ export const UpdateCourseSuccess = course => {
   return { type: types.UPDATE_COURSE_SUCCESS, course };
 };
 
+export const DeleteCourseOptimistic = course => {
+  return { type: types.DELETE_COURSE_OPTIMISTIC, course };
+};
+
 export const loadCourses = () => {
   return dispatch => {
     dispatch(beginApiCall());
@@ -47,5 +51,12 @@ export const saveCourse = course => {
         dispatch(apiCallError());
         throw error;
       });
+  };
+};
+
+export const deleteCourse = course => {
+  return dispatch => {
+    dispatch(DeleteCourseOptimistic(course));
+    return courseAPI.deleteCourse(course.id);
   };
 };

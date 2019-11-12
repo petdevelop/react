@@ -45,9 +45,23 @@ const ManageCoursePage = ({
     }));
   };
 
+  const formIsValid = () => {
+    const { title, author, category } = course;
+    const errors = {};
+
+    if (!title) errors.title = "Title is required.";
+    if (!author) errors.author = "Author is required.";
+    if (!category) errors.category = "Category is required.";
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
   const handleSave = event => {
     event.preventDefault();
-    setSaving(true);
+    if (!formIsValid()) return;
+
+    if (!props.errors) setSaving(true);
     saveCourse(course)
       .then(() => {
         toast.success("Course saved.");
